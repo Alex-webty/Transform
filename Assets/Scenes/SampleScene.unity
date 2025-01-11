@@ -566,7 +566,9 @@ GameObject:
   - component: {fileID: 1402375892}
   - component: {fileID: 1402375891}
   - component: {fileID: 1402375890}
-  - component: {fileID: 1402375889}
+  - component: {fileID: 1402375896}
+  - component: {fileID: 1402375895}
+  - component: {fileID: 1402375894}
   m_Layer: 0
   m_Name: CrazyCube
   m_TagString: Untagged
@@ -574,28 +576,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1402375889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402375888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b2f90d8ef2cb9f4db6babadb5d8997c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _waypoints:
-  - {fileID: 271842140}
-  - {fileID: 153936287}
-  - {fileID: 1168809335}
-  _speed: 3
-  _speedIncrease: 1
-  _speedSpin: 100
-  x: 3
-  y: 3
-  z: 3
 --- !u!65 &1402375890
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -682,6 +662,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402375894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402375888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb2111f3c1a92948a140b81f99ed208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2
+  x: 3
+  y: 3
+  z: 3
+--- !u!114 &1402375895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402375888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d6a3492a00d9d41b22ad4089618604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3
+  _waypoint: {fileID: 271842140}
+--- !u!114 &1402375896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402375888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f35be8c0ebe9ac4db379c8e9bf45779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 100
 --- !u!1 &1625888736
 GameObject:
   m_ObjectHideFlags: 0
